@@ -7,65 +7,10 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #33322B, #413D2B);
-            color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            width: 100%;
-            max-width: 450px;
-            text-align: center;
-        }
-        .profile-name {
-            font-size: 27px;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        .profile-bio {
-            font-size: 18px;
-            color: #C0A520;
-            margin-bottom: 30px;
-        }
-        .links-container {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-        .link-btn {
-            background: #EBC301;
-            color: black;
-            text-decoration: none;
-            padding: 16px;
-            border-radius: 12px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        }
-        .link-btn:hover {
-            background: #3b82f6;
-            transform: translateY(-2px);
-        }
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            /* Latar belakang abstrak geometris menggunakan CSS Gradients */
-            background-color: #0f2a1d; /* Warna dasar hijau hutan */
-            background-image: 
-                radial-gradient(circle at 20% 30%, #ebc301 0%, #ebc301 15%, transparent 16%),
-                radial-gradient(circle at 75% 20%, #c2410c 0%, #c2410c 10%, transparent 11%),
-                linear-gradient(45deg, #1e293b 25%, transparent 25%), 
-                linear-gradient(-45deg, #0f172a 25%, transparent 25%),
-                linear-gradient(135deg, #14532d 25%, transparent 25%),
-                linear-gradient(-135deg, #022c22 25%, transparent 25%);
-            background-size: 120px 120px; /* Mengatur ukuran pola abstrak */
+            /* Latar belakang gradasi estetik mirip tema Mineral Linktree Anda */
+            background: linear-gradient(135deg, #bfae96, #8c7d6b);
             
-            color: #ffffff;
+            color: #333333; /* Mengubah warna teks menjadi gelap agar kontras dengan background */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -78,22 +23,28 @@
             width: 100%;
             max-width: 450px;
             text-align: center;
-            background: rgba(15, 23, 42, 0.65); /* Membuat kotak profil sedikit transparan agar teks terbaca jelas */
-            padding: 30px 20px;
-            border-radius: 24px;
-            backdrop-filter: blur(10px); /* Efek kaca buram di belakang teks */
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        }
+        /* KODING UNTUK FOTO PROFIL BULAT */
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%; /* Membuat gambar menjadi bulat sempurna */
+            object-fit: cover;
+            border: 3px solid #ffffff; /* Memberikan bingkai putih tipis */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            margin-bottom: 15px;
         }
         .profile-name {
-            font-size: 27px;
-            font-weight: bold;
-            margin-bottom: 5px;
-            color: #ffffff;
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #2c251e;
         }
         .profile-bio {
-            font-size: 16px;
-            color: #e2e8f0;
+            font-size: 14px;
+            color: #594f43;
             margin-bottom: 30px;
+            line-height: 1.5;
         }
         .links-container {
             display: flex;
@@ -101,18 +52,18 @@
             gap: 16px;
         }
         .link-btn {
-            background: #EBC301;
-            color: black;
+            background: #ffffff; /* Tombol warna putih bersih */
+            color: #2c251e;
             text-decoration: none;
             padding: 16px;
-            border-radius: 12px;
+            border-radius: 30px; /* Membuat tombol lonjong melengkung seperti Linktree */
             font-weight: 600;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
         .link-btn:hover {
-            background: #ffffff;
-            color: #0f2a1d;
+            background: #2c251e;
+            color: #ffffff;
             transform: translateY(-2px);
         }
     </style>
@@ -120,14 +71,15 @@
 <body>
 
     <div class="container">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400" alt="Ester Hutapea" class="profile-img">
+
         <div class="profile-name">Ester Hutapea</div>
         <div class="profile-bio">Data Analyst | Entry-level specialist in data cleaning, visualization (Looker Studio), and predictive insights.</div>
 
         <div class="links-container">
-            <a href="https://www.linkedin.com/in/ester-hutapea" class="link-btn" target="_blank">LinkedIn Profile</a>
-            <a href="https://docs.google.com/presentation/d/1_h3llR5ZhF6-hgwQqSfSmeEQPruL-Spkq5n9rcKssEw/present?usp=sharing" class="link-btn" target="_blank">Bigquery SQL</a>
-            <a href="#" class="link-btn" target="_blank">Project Tableau / Power BI</a>
-            <a href="mailto:esterhutapea@outlook.com" class="link-btn">Contact Me via Email</a>
+            <a href="https://www.linkedin.com/in/dresterhutapea" class="link-btn" target="_blank">LinkedIn Profil</a>
+            <a href="https://linktr.ee/dresterhutapea" class="link-btn" target="_blank">Bigquery SQL</a>
+            <a href="mailto:emailanda@gmail.com" class="link-btn">Hubungi Saya via Email</a>
         </div>
     </div>
 
